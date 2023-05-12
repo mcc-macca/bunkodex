@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Installation - BunkoDEX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../vendor/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Database Installation - BunkoDEX</h1>
+        <h3>Thank you for choosing Macca Computer BunkoDEX free software!</h3>
+    </div>
+    <div class="main">
+        <h2>Enter your database credentials:</h2>
+        <form method="post" action="test_db_connection" id="db-form">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>DB Host:</td>
+                        <td><input type="text" name="dbhost" placeholder="es. localhost"></td>
+                    </tr>
+                    <tr>
+                        <td>DB User:</td>
+                        <td><input type="text" name="dbuser" placeholder="es. root"></td>
+                    </tr>
+                    <tr>
+                        <td>DB Pass:</td>
+                        <td><input type="text" name="dbpass" placeholder="in some cases you can leave this field blank">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DB Name:</td>
+                        <td><input type="text" name="dbname" placeholder="es. bunkodex"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="info"></h2>
+            <button type="button" id="test-db-btn">Test del database</button>
+        </form>
+    </div>
+    <div class="footer">
+        <h1>BunkoDEX</h1>
+        <h2><a href="https://maccacomputer.altervista.org">Macca Computer</a> &copy; 2018 - 2023</h2>
+        <h5>GNU AGPL License</h5>
+    </div>
+    <script>
+        function dbinstall() {
+            window.location.replace(
+                "installdb.html"
+            );
+        }
+
+        $(document).ready(function () {
+            $('#test-db-btn').on('click', function () {
+                var data = $('#db-form').serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: 'test_db_connection.php',
+                    data: data,
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.success) {
+                            document.getElementById("info").innerHTML = "Database connection successful!";
+                            document.getElementById("info").style.color = "lime";
+                        } else {
+                            document.getElementById("info").innerHTML = "Error connecting to database";
+                            document.getElementById("info").style.color = "red";
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        document.getElementById("info").innerHTML = "Error connecting to database";
+                        document.getElementById("info").style.color = "red";
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
