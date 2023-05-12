@@ -7,6 +7,10 @@ The BunkoDEX catalog system works in a very simple way:<br>
 The numerical code consists of two members consisting of three digits, separated by a dot and a HEX sub-subcategory (always three characters).<br>
 A pre-set table with the wiki of the main categories will be published shortly.
 
+# INSTALL BunkoDEX
+
+Read [INSTALL.md](INSTALL.md) for correct installation of BunkoDEX.
+
 ## Little example
 An Arch Linux CD.<br>
 Main category:<br>
