@@ -18,7 +18,7 @@ For example: ArchLinux is a Linux distribution.<br>
 It is part of the IT category, therefore the COD. 034 is correct;<br>
 Linux code is `5D` -> Arch is `7F`<br>
 So the complete BunkoDEX code for the Arch Linux CD will be:<br>
-`034.143:D7F`
+`034.143:D7F`<br>
 *PS. All written codes are purely invented, in the official table they will be different. I remember that they can be customized to your liking, provided that the syntax remains the same.*
 
 # License
