@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="797.44" height="761.043" viewBox="0 0 797.44 761.043">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.095" y1="0.453" x2="0.916" y2="0.913" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#327af3"/>
+      <stop offset="1" stop-color="#193d7a"/>
+    </linearGradient>
+    <filter id="Rettangolo_1" x="245.755" y="0" width="551.685" height="551.685" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.233" x2="0.919" y2="0.754" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f03d3d"/>
+      <stop offset="1" stop-color="#821f1f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.824" y1="0.679" x2="0.089" y2="0.787" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#50ee29"/>
+      <stop offset="1" stop-color="#287715"/>
+    </linearGradient>
+    <filter id="Poligono_1" x="125" y="256.343" width="534.584" height="504.701" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Raggruppa_1" data-name="Raggruppa 1" transform="translate(-835 -50.807)">
+    <g transform="matrix(1, 0, 0, 1, 835, 50.81)" filter="url(#Rettangolo_1)">
+      <rect id="Rettangolo_1-2" data-name="Rettangolo 1" width="400" height="400" transform="translate(382.56) rotate(20)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Ellisse_1" data-name="Ellisse 1" transform="translate(835 127)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient-2)">
+      <circle cx="200" cy="200" r="200" stroke="none"/>
+      <circle cx="200" cy="200" r="199.5" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 835, 50.81)" filter="url(#Poligono_1)">
+      <path id="Poligono_1-2" data-name="Poligono 1" d="M200,0,400,350H0Z" transform="translate(500.88 722.04) rotate(-160)" fill="url(#linear-gradient-3)"/>
+    </g>
+  </g>
+</svg>

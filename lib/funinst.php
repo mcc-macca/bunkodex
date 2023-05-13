@@ -26,15 +26,17 @@ function print_head($title)
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>$title - BunkoDEX</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='../css/style.css'>
     <script src='../vendor/jquery/jquery.min.js'></script>
     <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'>
 </head>
 
 <body>
 <div class='head'>
+<center>
         <h1>$title - BunkoDEX</h1>
         <h3>Thank you for choosing Macca Computer BunkoDEX free software!</h3>
+        </center>
     </div>
     ";
 }

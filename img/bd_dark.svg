@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="1920" height="827" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.095" y1="0.453" x2="0.916" y2="0.913" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#327af3"/>
+      <stop offset="1" stop-color="#193d7a"/>
+    </linearGradient>
+    <filter id="Rettangolo_1" x="1080.755" y="50.807" width="551.685" height="551.685" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.233" x2="0.919" y2="0.754" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f03d3d"/>
+      <stop offset="1" stop-color="#821f1f"/>
+    </linearGradient>
+    <filter id="Ellisse_1" x="835" y="127" width="439" height="459" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="50" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.824" y1="0.679" x2="0.089" y2="0.787" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#50ee29"/>
+      <stop offset="1" stop-color="#287715"/>
+    </linearGradient>
+    <filter id="Poligono_1" x="960" y="307.15" width="534.584" height="504.701" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1080"/>
+    <g id="Griglia_di_ripetizione_1" data-name="Griglia di ripetizione 1" clip-path="url(#clip-path)">
+      <g transform="translate(-0.5 3)">
+        <line id="Linea_1" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 81)">
+        <line id="Linea_1-2" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 159)">
+        <line id="Linea_1-3" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 237)">
+        <line id="Linea_1-4" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 315)">
+        <line id="Linea_1-5" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 393)">
+        <line id="Linea_1-6" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 471)">
+        <line id="Linea_1-7" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 549)">
+        <line id="Linea_1-8" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 627)">
+        <line id="Linea_1-9" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 705)">
+        <line id="Linea_1-10" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+      <g transform="translate(-0.5 783)">
+        <line id="Linea_1-11" data-name="Linea 1" x1="1920" transform="translate(0.5 0.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rettangolo_1)">
+      <rect id="Rettangolo_1-2" data-name="Rettangolo 1" width="400" height="400" transform="translate(1217.56 50.81) rotate(20)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellisse_1)">
+      <circle id="Ellisse_1-2" data-name="Ellisse 1" cx="200" cy="200" r="200" transform="translate(835 127)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Poligono_1)">
+      <path id="Poligono_1-2" data-name="Poligono 1" d="M200,0,400,350H0Z" transform="translate(1335.88 772.85) rotate(-160)" fill="url(#linear-gradient-3)"/>
+    </g>
+    <path id="BunkoDex" d="M328.568,183.757q-3.286,6.137-9.577,13.248-6.366,7.2-15.426,13.413-9.154,6.281-20.693,10.527-5.8,2.136-12.065,3.206t-12.953,1.07h-152q-4.312,0-7.05-1.361t-3.74-3.726q-1-2.359-.238-5.581.762-3.2,3.418-6.921L196.517,70.064q2-2.8,5.114-5.283t6.745-4.312q3.635-1.837,7.549-2.855t7.629-1.016H339.224q6.382,0,12.7,1.729,6.336,1.734,10.5,5.58,4.2,3.873,4.965,10.129.388,3.167-.7,7.073t-3.647,8.565l-2.922,5.314q-4.163,7.57-12.247,16.422-8.214,8.994-19.984,17.15,4.5,3.132,7.533,7.57,3.055,4.473,3.988,10.411.943,6-.706,13.65-1.671,7.751-6.752,17.24Zm-35.1-6.327q3.626-6.384,4.132-11.405.5-4.979-1.7-8.518-2.184-3.518-7.04-5.389-4.841-1.865-12.217-1.865H191.882l20.5-30.648h66.044q7.182,0,14.011-1.762,6.808-1.757,12.81-5.029,5.967-3.254,10.769-7.766,4.762-4.476,8.017-10.061l3.1-5.314q.877-1.505,1.074-2.632t-.285-1.878q-.482-.751-1.644-1.126t-3.006-.375H222.249L149.193,190.8H277.641q1.048,0,2.619-.129t3.135-.772q1.562-.642,3.335-2.181t3.287-4.211Zm231.663,30.2q-1.351,3.717-4.041,6.921-2.705,3.221-6.252,5.581t-7.678,3.726q-4.127,1.361-8.285,1.361H408.316q-7.392,0-15.089-1.5-7.678-1.493-14.234-4.8-6.521-3.294-11.621-8.3-5.059-4.967-7.14-11.984-2.057-6.936-.859-15.892,1.18-8.823,6.774-19.732L401.7,93.681h35.772l-33.307,69.328q-3.025,6.3-2.867,11.347.16,5.093,2.873,8.766,2.73,3.7,7.853,5.682,5.14,1.992,12.176,1.992h68.117l38.436-97.115h35.772Zm215.685,17.589H700.772l16.537-76.647q1.311-6.078-.161-10.86-1.46-4.742-4.98-8.113-3.5-3.352-8.821-5.135-5.305-1.778-11.942-1.778H627.157l-30.8,102.532H556.315l39.057-117.336q1-3,3.252-5.6t5.362-4.509q3.109-1.913,6.77-3t7.368-1.088h80.624q6.742,0,13.964,1.2,7.238,1.2,14.033,3.881,6.828,2.695,12.7,6.844,5.916,4.181,9.987,10.2,4.114,6.085,5.719,14.146,1.628,8.177-.288,18.625Zm230.7,0H913.76l-73.615-65.274q-5.863-4.867-4.606-12.091.667-3.341,2.792-6.248t5.479-4.891L913.8,93.463h57.223l-88.277,56.31Zm-154.929,0H776.542L804.18,46.144h34.229Zm345.277-47.79q1.4,8.493-.024,15.363-1.436,6.949-4.827,12.263-3.421,5.361-8.486,9.162-5.1,3.825-10.961,6.253-5.887,2.438-12.118,3.592t-11.941,1.157h-72.228q-8.316,0-18.29-2.583-9.932-2.572-18.47-8.419-8.457-5.792-14.179-14.934-2.816-4.5-4.274-9.967t-1.553-11.888l-.633-42.707q-.086-5.793,1.121-10.661t3.71-8.825q4.933-7.8,12.377-12.626,7.379-4.785,16.123-6.862,8.711-2.069,16.141-2.069h64.526q6.885,0,12.865.981t11.074,2.946q10.254,3.956,17.144,10,6.965,6.109,10.873,13.368,3.958,7.354,5.01,13.75Zm-44.094-42.473q-.829-6.284-5.047-9.284-4.2-2.985-11.4-2.985h-65.943q-7.343,0-11,3.043-3.678,3.059-3.4,8.993l2.02,42.707q.305,6.454,4.5,9.9,4.218,3.465,12,3.465h69.913q3.964,0,6.812-.867t4.569-2.6q3.427-3.445,2.575-9.9Zm282.147,13.616q2.976,7.951,4.062,15.358t.281,14.255q-.824,7.007-3.324,13.105t-6.666,11.266q-4.239,5.258-10.062,9.4T1371,219.122q-7.457,3.046-16.168,4.572t-18.632,1.527H1228.085q-4.312,0-8.287-1.361t-7.13-3.726q-3.151-2.359-5.315-5.581-2.153-3.2-2.879-6.921L1177.6,70.064q-.548-2.8.308-5.283t2.822-4.312q1.964-1.837,4.952-2.855t6.705-1.016h93.333q8.585,0,16.9,1.146t16.389,3.442q16.275,4.628,29.923,12.9,13.86,8.4,24.442,20.3,10.815,12.16,16.3,26.814ZM1353,121.2q-2.944-8.613-8.758-15.655-5.741-6.953-13.564-11.813-7.754-4.817-17.15-7.451-9.351-2.621-19.712-2.621H1215.7L1240.109,190.8h85.782q11.378,0,19.739-3.145,8.317-3.129,13.157-8.77,4.794-5.588,5.78-13.348.973-7.659-2.206-16.958Zm239.562,12.821q3.474,6.343,4.8,13.773,1.344,7.527-1.325,14.048-2.7,6.595-10.416,11.074-3.885,2.255-9.461,3.384t-12.823,1.129h-69.43l-13.463-30.293h67.656q3.82,0,6.282-.969t3.56-2.9q2.182-3.845-.729-9.478-3.062-5.924-9.385-9.265-6.286-3.322-12.773-3.322h-66.138q-3.74,0-6.225.93t-3.722,2.794q-2.489,3.749-.086,9.33l18.969,44.056q2.838,6.591,9.291,10.3,6.493,3.731,13.688,3.731h70l16.537,32.879H1515.15q-8.316,0-19.052-2.583-10.691-2.572-21.269-8.286-10.48-5.661-19.594-14.676-4.486-4.438-7.981-9.783t-5.988-11.582l-17.7-44.29q-2.507-6.273-2.7-13.449-.188-7.085,3.308-13.08,3.459-5.931,11.275-9.886,3.884-1.965,9.19-2.946t12.054-.981h64.526q7.429,0,17.1,2.069,9.706,2.077,19.582,6.752,9.959,4.714,19.146,12.4Q1586.359,122.689,1592.566,134.023Zm166.12-40.342-25.713,58.378,129.3,73.162h-55.134l-84.734-49.3-21.837,49.3h-55.288l35.676-73.4L1581.2,93.681h48.979l61.875,35.11,17.373-35.11Z" transform="translate(-2.778 769.199)" fill="#fff"/>
+  </g>
+</svg>

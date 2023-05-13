@@ -11,7 +11,8 @@ $_SESSION['logged'] = true;
 <div class="main">
     <center>
         <h1>Good Job! You succesfully install Macca Computer BunkoDEX!</h1><br><br>
-        <h2>BunkoDEX <?= $version ?> succesfully registered to <?= NAME_DEX ?></h2>
+        <h2>BunkoDEX <?= $version ?> succesfully registered to <?= NAME_DEX ?></h2><br>
+        <h3>Remember to rename or delete the <code>install</code> folder!</h3>
         <button onclick="openDash()"><b>OPEN DASHBOARD</b></button>
     </center>
 </div>
