@@ -1,15 +1,16 @@
 <?php
-$servername = "".$_POST['servername']."";
-$username = "".$_POST['username']."";
-$password = "".$_POST['password']."";
-$dbname = "".$_POST['dbname']."";
+$servername = $_POST['dbhost'];
+$username = $_POST['dbuser'];
+$password = $_POST['dbpass'];
+$dbname = $_POST['dbname'];
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    echo "ERRORE DURANTE LA CONNESSIONE AL DATABASE";
+if (!$conn) {
+    $response = array('success' => false);
 } else {
-    echo "CONNESSIONE AL DATABASE RIUSCITA";
+    $response = array('success' => true);
 }
+
+echo json_encode($response);
 $conn->close();
-?>
