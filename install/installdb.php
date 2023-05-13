@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database Installation - BunkoDEX</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="../vendor/jquery/jquery.min.js"></script>
-</head>
-
-<body>
-    <div class="head">
-        <h1>Database Installation - BunkoDEX</h1>
-        <h3>Thank you for choosing Macca Computer BunkoDEX free software!</h3>
-    </div>
+<?php
+require '../lib/funinst.php';
+if (isset($_POST['submit'])) {
+    include '../lib/conf.php';
+    $dbhost = html_string($_POST['dbhost']);
+    $dbuser = html_string($_POST['dbuser']);
+    $dbpass = html_string($_POST['dbpass']);
+    $dbname = html_string($_POST['dbname']);
+    define('DB_HOST', ''.$dbhost.'');
+    define('DB_USER', ''.$dbuser.'');
+    define('DB_PASS', ''.$dbpass.'');
+    define('DB_NAME', ''.$dbname.'');
+}
+print_head("Database Installation");
+?>
     <div class="main">
         <h2>Enter your database credentials:</h2>
-        <form method="post" action="test_db_connection" id="db-form">
-            <center>
+        <form method="post" action="installdb.php" id="db-form">
                 <table>
                     <tbody>
                         <tr>
@@ -40,17 +37,14 @@
                         </tr>
                     </tbody>
                 </table>
-            </center>
             <h2 id="info"></h2>
-            <button type="button" id="test-db-btn">Test database connection</button>
-            <button type="submit" id="submit-btn" style="display: none;">Next</button>
+            <button type="button" id="test-db-btn"><b>Test database connection</b></button>
+            <button type="submit" id="submit-btn" style="display: none;" name=""><b>Next</b></button>
         </form>
     </div>
-    <div class="footer">
-        <h1>BunkoDEX</h1>
-        <h2><a href="https://maccacomputer.altervista.org">Macca Computer</a> &copy; 2018 - 2023</h2>
-        <h5>GNU AGPL License</h5>
-    </div>
+    <?php 
+    print_foot();
+    ?>
     <script>
         function dbinstall() {
             window.location.replace(
@@ -61,6 +55,7 @@
         $(document).ready(function () {
             $('#test-db-btn').on('click', function () {
                 var data = $('#db-form').serialize();
+                console.log(data);
                 $.ajax({
                     type: 'POST',
                     url: 'test_db_connection.php',
@@ -71,6 +66,7 @@
                             document.getElementById("info").innerHTML = "Database connection successful!";
                             document.getElementById("info").style.color = "lime";
                             $('#submit-btn').show();
+                            $('#test-db-btn').hide();
                         } else {
                             document.getElementById("info").innerHTML = "Error connecting to database";
                             document.getElementById("info").style.color = "red";
@@ -84,6 +80,7 @@
             });
         });
 
+        console.log("%cBunkoDEX INSTALLATION - MACCA COMPUTER", "color: lime")
     </script>
 </body>
 

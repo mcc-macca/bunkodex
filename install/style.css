@@ -18,7 +18,7 @@ body, html {
 .main {
     background-color: #3a6c89;
     color: #f0f0f0;
-    padding: 30px 10%;
+    padding: 30px 20%;
     height: 100%;
 }
 
@@ -32,6 +32,15 @@ body, html {
 
 .main button:hover {
     background-color: #5e716c;
+}
+
+.main table {
+    padding-top: 30px;
+}
+
+.main table input {
+    width: 300px;
+    height: 30px;
 }
 
 .footer {
