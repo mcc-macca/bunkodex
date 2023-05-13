@@ -1,5 +1,9 @@
-# BunkoDEX
-Open Source Catalog System
+<div align="center">
+  <h1>BunkoDEX</h1>
+  <img src="img/bd_dark.svg" height="300px">
+  <p>Open Source Catalog System</p>
+  </div>
+
 
 ## How it work?
 
