@@ -11,10 +11,18 @@ if (isset($_POST['submit'])) {
     $query_file_asbolute = realpath(__DIR__ . '/' . $query_file_relative);
     $query_file = file_get_contents($query_file_asbolute);
     if (mysqli_multi_query($con, $query_file)) {
-        header("location: setupcomplete.php");
-        $user = html_string($_POST['username']);
-        $pass = md5(html_string($_POST['password']));
+        if (isset($_POST['username'])) {
+            $user = html_string($_POST['username']);
+        } else {
+            $user = "admin";
+        }
+        if (isset($_POST['password'])) {
+            $pass = md5(html_string($_POST['password']));
+        } else {
+            $pass = md5("bunkodex");
+        }
         $query = "INSERT INTO `bunkodex_admin` (`user`, `pass`) VALUES `$user`, `$pass`;";
+        header("location: setupcomplete.php");
     } else {
         echo "<h1 class='errorh1'>ERROR DURING BunkoDEX INSTALL!</h1>";
     }
