@@ -10,6 +10,7 @@ if (isset($_POST['submit'])) {
     define('DB_USER', ''.$dbuser.'');
     define('DB_PASS', ''.$dbpass.'');
     define('DB_NAME', ''.$dbname.'');
+    header("location: setupcompany.php");
 }
 print_head("Database Installation");
 ?>
@@ -39,19 +40,13 @@ print_head("Database Installation");
                 </table>
             <h2 id="info"></h2>
             <button type="button" id="test-db-btn"><b>Test database connection</b></button>
-            <button type="submit" id="submit-btn" style="display: none;" name=""><b>Next</b></button>
+            <button type="submit" id="submit-btn" style="display: none;" name="submit"><b>Next</b></button>
         </form>
     </div>
     <?php 
     print_foot();
     ?>
     <script>
-        function dbinstall() {
-            window.location.replace(
-                "installdb.html"
-            );
-        }
-
         $(document).ready(function () {
             $('#test-db-btn').on('click', function () {
                 var data = $('#db-form').serialize();
