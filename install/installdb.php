@@ -43,9 +43,6 @@ print_head("Database Installation");
             <button type="submit" id="submit-btn" style="display: none;" name="submit"><b>Next</b></button>
         </form>
     </div>
-    <?php 
-    print_foot();
-    ?>
     <script>
         $(document).ready(function () {
             $('#test-db-btn').on('click', function () {
@@ -77,6 +74,6 @@ print_head("Database Installation");
 
         console.log("%cBunkoDEX INSTALLATION - MACCA COMPUTER", "color: lime")
     </script>
-</body>
-
-</html>
+    <?php 
+    print_foot();
+    ?>

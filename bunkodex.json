@@ -1,0 +1,14 @@
+{
+    "name": "BunkoDEX",
+    "version": "v.0.0.1",
+    "url": "https://github.com/mcc-macca/bunkodex",
+    "urlupdate": "https://taiyoshitsu.altervista.org/api/bunkodex/bunkodex.json",
+    "author": {
+        "nome": "Macca Computer",
+        "mail": "info@maccacomputer.com"
+    },
+    "db": {
+        "install": "sql/release/0.0.1.sql",
+        "update": "sql/update/"
+    }
+}
