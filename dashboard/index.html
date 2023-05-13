@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BunkoDEX</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="head inline">
+        <img src="../img/bd_norm.svg" height="50px">
+        <h1>BunkoDEX Dashboard</h1>
+        <p>Welcome macca! <a href="logout.php">LOGOUT</a></p>
+    </div>
+    <div class="container">
+        <div class="left">
+            <ul class="tree-view has-collapse-button has-connector white-text">
+                <details open>
+                    <summary>Categories</summary>
+                    <ul>
+                        <li id="view-cat">View</li>
+                        <li id="add-cat">Add</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Sub-Categories</summary>
+                    <ul>
+                        <li id="view-sub-cat">View</li>
+                        <li id="add-sub-cat">Add</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Depot</summary>
+                    <ul>
+                        <li id="view-product">View product</li>
+                        <li id="add-product">Add product</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>ADMIN</summary>
+                    <ul>
+                        <li id="add-sub-admin">Add sub-admin</li>
+                        <li id="view-admin">View Admin</li>
+                    </ul>
+                </details>
+            </ul>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+
+    <script>
+        var lis = document.querySelectorAll('li[id]');
+
+        lis.forEach(function (li) {
+            li.addEventListener('click', function () {
+                var iframe = document.getElementById('frameview');
+                iframe.src = this.id + '.php';
+            });
+        });
+    </script>
+
+    </div>
+    <div class="footer">
+        <h3>Macca Computer BunkoDEX &copy; 2018 - 2023</h3>
+    </div>
+</body>
+
+</html>
