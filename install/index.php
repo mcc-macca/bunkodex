@@ -7,13 +7,7 @@ print_head("Install");
         <center><button onclick="dbinstall()"><b>INSTALL</b></button></center>
     </div>
     <?php print_foot(); ?>
-    <script>
-        function dbinstall() {
-            window.location.replace(
-                "installdb.php"
-            );
-        }
-    </script>
+    <script src="../lib/js/function.js"></script>
 </body>
 
 </html>
