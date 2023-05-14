@@ -1,5 +1,9 @@
-# BunkoDEX
-Open Source Catalog System
+<div align="center">
+  <h1>BunkoDEX</h1>
+  <img src="img/bd_dark.svg" height="300px">
+  <p>Open Source Catalog System</p>
+  </div>
+
 
 ## How it work?
 
@@ -20,7 +24,7 @@ The BunkoDEX code will be `034.143`<br>
 For a more precise classification, an additional BunkoDEX identification code can be added after the sub-category.<br>
 For example: ArchLinux is a Linux distribution.<br>
 It is part of the IT category, therefore the COD. 034 is correct;<br>
-Linux code is `5D` -> Arch is `7F`<br>
+Linux code is `D` -> Arch is `7F`<br>
 So the complete BunkoDEX code for the Arch Linux CD will be:<br>
 `034.143:D7F`<br>
 *PS. All written codes are purely invented, in the official table they will be different. I remember that they can be customized to your liking, provided that the syntax remains the same.*
