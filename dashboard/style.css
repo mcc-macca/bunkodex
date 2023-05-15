@@ -8,6 +8,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: rgb(226, 226, 226);
 }
@@ -63,7 +67,7 @@ nav .fas {
   position: relative;
   width: 70px;
   height: 40px;
-  top: 20px;
+  top: 13px;
   font-size: 20px;
   text-align: center;
 }
@@ -128,7 +132,6 @@ nav a:hover {
 .users .card img {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
 }
 
 .users .card h4 {
@@ -227,4 +230,12 @@ table thead tr {
   background: #1f2e51;
   color: #fff;
   transition: 0.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
