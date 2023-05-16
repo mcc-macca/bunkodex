@@ -54,7 +54,7 @@ nav:hover {
   text-transform: uppercase;
 }
 
-a {
+nav a {
   position: relative;
   width: 280px;
   font-size: 14px;
@@ -238,4 +238,33 @@ table thead tr {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.info hr {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+
+.info {
+  padding: 30px;
+}
+
+.info .td {
+  width: 300px;
+  font-size: 17px;
+  padding: 5px;
+}
+
+.info h1 {
+  font-size: 30px;
+  padding-top: 12px;
+}
+
+.longtd {
+  width: 3000px;
 }
