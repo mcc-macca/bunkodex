@@ -67,14 +67,14 @@ nav .fas {
   position: relative;
   width: 70px;
   height: 40px;
-  top: 13px;
+  top: 10px;
   font-size: 20px;
   text-align: center;
 }
 
 .nav-item {
   position: relative;
-  top: 12px;
+  top: 8px;
   margin-left: 10px;
 }
 
@@ -104,6 +104,7 @@ nav a:hover {
 .main-top {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
 .main-top i {
@@ -255,7 +256,7 @@ table thead tr {
 }
 
 .info .td {
-  width: 300px;
+  width: 700px;
   font-size: 17px;
   padding: 5px;
 }
@@ -267,4 +268,8 @@ table thead tr {
 
 .longtd {
   width: 3000px;
+}
+
+.info img {
+  width: 400px;
 }

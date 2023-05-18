@@ -1,18 +1,6 @@
 <?php
 
 /**
- * Funzione per evitare attacchi SQL Injection e XSS.
- * Function for prevent SQL Injection and XSS Attacks
- */
-function html_string($string)
-{
-    $string = htmlspecialchars($string, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-    $string = trim($string);
-    $string = addslashes($string);
-    return $string;
-}
-
-/**
  * Function for print the first part of the HTML code (head)
  */
 function print_head($title)
