@@ -6,8 +6,7 @@
  * @copyright 2018 - 2023 Macca Computer
  * @license GNU AGPL 3.0 <https://www.gnu.org/licenses/agpl-3.0.txt>
  */
-require __DIR__.'../vendor/autoload.php';
-require __DIR__.'../vendor/fpdf/fpdf.php';
+require '../lib/fpdf/';
 
 
 
@@ -34,4 +33,25 @@ class BunkoDEX_PDFConfig {
         $pdf->SetX(($pdf->GetPageWidth() - $pdf->GetStringWidth($title)) / 2);
         $pdf->Cell(0, 10, $title, 0, 1, 'C');
     } 
+}
+
+class BunkoDEX_PDF extends FPDI {
+    protected $pdfConfig;
+
+    public function __construct() {
+        parent::__construct();
+        $this->pdfConfig = new BunkoDEX_PDFConfig();
+    }
+
+    public function Header() {
+        $this->pdfConfig->Header($this);
+    }
+
+    public function Footer() {
+        $this->pdfConfig->Footer($this);
+    }
+
+    public function Title($title) {
+        $this->pdfConfig->Title($this, $title);
+    }
 }
