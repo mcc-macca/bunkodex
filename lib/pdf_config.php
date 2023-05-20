@@ -7,6 +7,7 @@
  * @license GNU AGPL 3.0 <https://www.gnu.org/licenses/agpl-3.0.txt>
  */
 require __DIR__.'../vendor/autoload.php';
+require __DIR__.'../vendor/fpdf/fpdf.php';
 
 
 

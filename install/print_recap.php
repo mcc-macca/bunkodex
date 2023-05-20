@@ -1,9 +1,12 @@
 <?php
 require '../vendor/autoload.php';
-require '../vendor/fpdf/fpdf/original/fpdf.php';
 require '../lib/pdf_config.php';
 
-$pdf = New BunkoDEX_PDFConfig;
+$pdf = New Fpdf;
+$def = New BunkoDEX_PDFConfig;
 
 $pdf->AddPage();
+$pdf->SetAuthor("Macca Computer BunkoDEX");
+$pdf->SetCreator("BunkoDEX Automatic PDF Generator");
+$def->Header($pdf);
 

@@ -15,7 +15,6 @@
     ],
     "minimum-stability": "alpha",
     "require": {
-        "fpdf/fpdf": "^1.85",
         "phpmailer/phpmailer": "^6.8",
         "spipu/html2pdf": "^4.6"
     }
