@@ -166,7 +166,7 @@ function __construct($orientation='P', $unit='mm', $size='A4')
 	// Enable compression
 	$this->SetCompression(true);
 	// Metadata
-	$this->metadata = array('Producer'=>'FPDF '.self::VERSION);
+	$this->metadata = array('Producer'=>'Macca Computer PDF Generator');
 	// Set default PDF version number
 	$this->PDFVersion = '1.3';
 }
