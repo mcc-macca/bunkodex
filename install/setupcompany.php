@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../lib/funinst.php';
 require '../lib/function.php';
 require '../lib/conf.php';
@@ -21,9 +22,11 @@ if (isset($_POST['submit'])) {
     }
     $query = "INSERT INTO `bunkodex_admin` (`uid`, `pass`) VALUES ('$user', '$pass');";
     if ($conn->query($query)){
+        $_SESSION['user'] = html_string($user);
         header("location: setupcomplete.php");
     } else {
         echo "<h1>ERROR DURING ADMIN SETUP</h1>";
+        die;
     }
     
 }
