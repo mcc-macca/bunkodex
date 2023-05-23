@@ -2,8 +2,8 @@
 - [ ] add login system
 
 ## PROTECT BUNKODEX FROM THESE ATTACKS:
-- [ ] SQL Injection
-- [ ] XSS Attack
+- [X] SQL Injection
+- [X] XSS Attack
 - [ ] CSRF
-- [ ] LDAP, XML Injection
-- [ ] Session Hijacking
+- [X] LDAP, XML Injection
+- [X] Session Hijacking
