@@ -15,7 +15,7 @@ function print_head($title)
       <meta charset='UTF-8' />
       <title>$title - BunkoDEX</title>
       <link rel='stylesheet' href='style.css' />
-      <link rel='stylesheet' href='../css/css/all.css' />
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' />
     </head>";
 }
 
@@ -32,32 +32,32 @@ function print_sidebar()
               <img src='../img/bd_norm.svg' height='100px'>
               <span class='nav-item'>Welcome<br>back!</span>
             </a></li>
-          <li><a href='#'>
+          <li><a href='index.php'>
               <i class='fas fa-sharp fa-solid fa-chart-line'></i>
               <span class='nav-item'>Dashboard</span>
             </a></li>
-          <li><a href='#'>
+          <li><a href='cat.php'>
               <i class=' fas fa-sharp fa-solid fa-server'></i>
               <span class='nav-item'>Category</span>
             </a></li>
-          <li><a href='#'>
+          <li><a href='scat.php'>
               <i class='fas fa-database'></i>
               <span class='nav-item'>Sub-category</span>
             </a></li>
-          <li><a href='#'>
+          <li><a href='product.php'>
               <i class='fas fa-chart-bar'></i>
               <span class='nav-item'>Product</span>
             </a></li>
-          <li><a href='#'>
+          <li><a href='admin.php'>
               <i class='fas fa-solid fa-users'></i>
               <span class='nav-item'>Admin</span>
             </a></li>
-          <li><a href='#'>
+          <li><a href='settings.php'>
               <i class='fas fa-cog'></i>
               <span class='nav-item'>Settings</span>
             </a></li>
   
-          <li><a href='#' class='logout'>
+          <li><a href='../login/logout.php' class='logout'>
               <i class='fas fa-sign-out-alt'></i>
               <span class='nav-item'>Log out</span>
             </a></li>
@@ -89,7 +89,7 @@ function print_foot()
   </div>
 </section>
 </div>
-<script src='js/function.js'></script>
+<script src='../lib/js/function.js'></script>
 </body>
 
 </html>";
