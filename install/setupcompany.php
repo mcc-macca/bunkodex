@@ -16,9 +16,9 @@ if (isset($_POST['submit'])) {
         $user = "admin";
     }
     if (isset($_POST['password'])) {
-        $pass = md5(html_string($_POST['password']));
+        $pass = password_hash(html_string($_POST['password']), PASSWORD_DEFAULT);
     } else {
-        $pass = md5("bunkodex");
+        $pass = password_hash("bunkodex", PASSWORD_DEFAULT);
     }
     $query = "INSERT INTO `bunkodex_admin` (`uid`, `pass`) VALUES ('$user', '$pass');";
     if ($conn->query($query)){

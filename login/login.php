@@ -3,24 +3,17 @@ session_start();
 require '../lib/function.php';
 require '../lib/conf.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = html_string($_POST['username']);
-    $password = html_string($_POST['password']);
-    $ip = getIPAddress();
-    $queryuser = $conn->query(QRYADM . "WHERE `uid`='$username'");
-    if ($queryuser->num_rows == 0) { // User doesn't exist
-        $_SESSION['message'] = "User with that UID doesn't exist!";
-        header("location: error.php");
-        die;
-    } else {
-        $user = $queryuser->fetch_assoc();
-        if (password_verify($password, $user['pass'])) {
-            $id = $user['id'];
-            $result_info = $mysqli->query(QRYADM . "WHERE id='$id'");
-            $info = $result_info->fetch_assoc();
-            $_SESSION['uid']       = $user['uid'];
-            $_SESSION['logged_in'] = true;
+if (isset($_POST['submit'])) {
+    $uid  = html_string($_POST['username']);
+    $pass = html_string($_POST['password']);
 
+    $query = $conn->query("SELECT * FROM `bunkodex_admin` WHERE `uid` = '$uid'");
+
+    if ($query->num_rows != 0) {
+        $user = $query->fetch_assoc();
+        if (password_verify($pass, $user['pass'])) {
+            $_SESSION['logged_in'] = true;
+            $_SESSION['uid'] = $user['uid'];
             $data      = date("d/m/Y");
             $ora       = date("H:i:s");
             $ip        = getIPAddress();
@@ -29,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $os_type   = PHP_OS_FAMILY;
             $os_uname  = php_uname();
 
-            $log = $mysqli->query("INSERT INTO `bunkodex_log` 
+            $log = $conn->query("INSERT INTO `bunkodex_log` 
                            (`utente`, `date`, `ora`, `ip`, `user_agent`, `os_arch`, `os_type`, `os_uname`) VALUES
                            ('" . $user['uid'] . "', '$data', '$ora', '$ip', '$useragent', '$os_arch', '$os_type', '$os_uname');");
 
@@ -41,9 +34,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             header("location: ../dashboard/index.php");
         } else {
-            $_SESSION['message'] = "You have entered wrong password, try again!";
+            $_SESSION['message'] = "Wrong password! Try Again!";
             header("location: error.php");
+            die;
         }
+    } else {
+        $_SESSION['message'] = "User with that mail doesn't exist!";
+        header("location: error.php");
+        die;
     }
 }
 ?>
@@ -83,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </tr>
             </table>
 
-            <button type="submit"><b>LOGIN</b></button><br><br>
+            <input type="submit" name="submit" value="LOGIN"><br><br>
             <center>
                 <p>Powered by Macca Computer Login System</p>
             </center>

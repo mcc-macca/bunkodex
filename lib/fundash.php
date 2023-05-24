@@ -94,3 +94,27 @@ function print_foot()
 
 </html>";
 }
+
+function session_expired(){
+  echo "<!DOCTYPE html>
+  <html lang='en'>
+
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Session Expired!</title>
+  </head>
+
+  <body>
+    <center>
+      <br><br><br>
+      <h1>BunkoDEX</h1>
+      <h1>Session expired!</h1>
+      <br>
+      <h2>Re-<a href='../index.php'>login</a></h2>
+    </center>
+  </body>
+
+  </html>";
+}

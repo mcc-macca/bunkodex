@@ -34,11 +34,11 @@ html {
     background-color: #5e716c;
 }
 
-.main table {
+.main .tabella_index {
     padding-top: 30px;
 }
 
-.main table input {
+.main .tabella_index input {
     width: 300px;
     height: 30px;
 }
@@ -95,7 +95,7 @@ html {
     margin-bottom: 10px;
 }
 
-.login-container button {
+.login-container input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #88a59e;
@@ -105,7 +105,7 @@ html {
     cursor: pointer;
 }
 
-.login-container button:hover {
+.login-container input[type="submit"]:hover {
     background-color: #5e716c;
 }
 
