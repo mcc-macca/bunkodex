@@ -69,3 +69,8 @@ function getIPAddress() {
 	}
 	return $ip;
 }
+
+function checkInternet(){
+    $int = system("ping -w 10 -n 5 maccacomputer.com");
+    return $int;
+}

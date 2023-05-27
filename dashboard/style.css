@@ -273,3 +273,41 @@ table thead tr {
 .info img {
   width: 400px;
 }
+
+.crudbutton {
+  background-color: #3a6c89;
+  height: 40px;
+  width: 300px;
+}
+
+.formcrud tr .normtd {
+  font-size: 22px;
+  width: 150px;
+}
+
+.formcrud input[type="text"] {
+  font-size: 22px;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.formcrud textarea {
+  font-size: 22px;
+  height: 80px;
+  width: 300px;
+}
+
+.formcrud input[type="submit"] {
+  margin-top: 10px;
+  font-size: 22px;
+  height: 30px;
+  width: 100%;
+}
+
+.formcrud select {
+  font-size: 22px;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}

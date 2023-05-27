@@ -2,7 +2,6 @@
 session_start();
 require '../lib/fundash.php';
 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-  $_SESSION['username'] = "macca";
   require '../lib/conf.php';
   
   require '../lib/function.php';
@@ -22,7 +21,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
     <img src='../img/bd_alpha.svg'>
   </center>
   <?php
-  $log = $conn->query("SELECT * FROM `bunkodex_log` WHERE `utente`='" . $_SESSION['username'] . "'ORDER BY id DESC LIMIT 1,1;");
+  $log = $conn->query("SELECT * FROM `bunkodex_log` WHERE `utente`='" . $_SESSION['uid'] . "'ORDER BY id DESC LIMIT 1,1;");
   $rislog = $log->fetch_assoc();
   $numlog = $log->num_rows;
 

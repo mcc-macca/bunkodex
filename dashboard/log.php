@@ -2,7 +2,6 @@
 session_start();
 require '../lib/fundash.php';
 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-    $_SESSION['username'] = "macca";
     require '../lib/conf.php';
     
     require '../lib/function.php';
