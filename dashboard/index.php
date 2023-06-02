@@ -18,7 +18,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
   $product = $conn->query(QRYPRO);
   $numprod = $product->num_rows; ?>
   <center>
-    <img src='../img/bd_alpha.svg'>
+    <img src='../img/bd_alpha.svg' height="250px">
   </center>
   <?php
   $log = $conn->query("SELECT * FROM `bunkodex_log` WHERE `utente`='" . $_SESSION['uid'] . "'ORDER BY id DESC LIMIT 1,1;");
@@ -35,7 +35,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
   <div class='titolo'>
     <h1>Hi <?= $_SESSION['uid'] ?>!</h1>
   </div>
-  <div class='info'>
+  <div class='info bigimage'>
     <table class='tabella_index'>
       <tr>
         <td class='td'>UID:</td>

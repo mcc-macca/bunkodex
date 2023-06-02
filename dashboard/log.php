@@ -60,7 +60,8 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
         }
         echo "</table>";
         echo "<center>";
-        if (isset($_GET['pagina']) > 1) {
+        $get = isset($_GET['pagina']) ? $_GET['pagina'] : null ;
+        if ($get > 1) {
             echo  "<a href='log.php?pagina=" . ($pagina - 1) . "'><button style='height: 35px; padding'>Previous page</button></a>";
         }
         if ($log_num == 10) {

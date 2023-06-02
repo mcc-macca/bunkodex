@@ -270,10 +270,6 @@ table thead tr {
   width: 3000px;
 }
 
-.info img {
-  width: 400px;
-}
-
 .crudbutton {
   background-color: #3a6c89;
   height: 40px;
@@ -298,11 +294,15 @@ table thead tr {
   width: 300px;
 }
 
-.formcrud input[type="submit"] {
+.formcrud button {
   margin-top: 10px;
   font-size: 22px;
   height: 30px;
   width: 100%;
+}
+
+.formcrud button img {
+  height: 20px;
 }
 
 .formcrud select {
@@ -310,4 +310,16 @@ table thead tr {
   height: 30px;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.formcrud img {
+  height: 10px;
+}
+
+.sumview tbody td {
+  width: 200px;
+}
+
+.sumview {
+  font-size: 20px;
 }
