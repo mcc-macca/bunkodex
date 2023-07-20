@@ -21,7 +21,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
     <img src='../img/bd_alpha.svg' height="250px">
   </center>
   <?php
-  $log = $conn->query("SELECT * FROM `bunkodex_log` WHERE `utente`='" . $_SESSION['uid'] . "'ORDER BY id DESC LIMIT 1,1;");
+  $log = $conn->query("SELECT * FROM `bunkodex_log` WHERE `utente`='" . $_SESSION['uid'] . "' ORDER BY id DESC LIMIT 1,1;");
   $rislog = $log->fetch_assoc();
   $numlog = $log->num_rows;
 
