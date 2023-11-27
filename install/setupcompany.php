@@ -23,7 +23,6 @@ if (isset($_POST['submit'])) {
         header("location: setupcomplete.php");
     } else {
         echo "<h1>ERROR DURING ADMIN SETUP</h1>";
-        die;
     }
     
 }
