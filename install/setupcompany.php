@@ -14,6 +14,9 @@ if (isset($_POST['submit'])) {
     $user = isset($_POST['username']) ? html_string($_POST['username']) : "admin";
     $pass = isset($_POST['password']) ? password_hash(html_string($_POST['password']), PASSWORD_DEFAULT) : "bunkodex";
 
+    $_SESSION['tmptmp'] = $user;
+    $_SESSION['password'] = html_string($_POST['password']);
+
     $query = "INSERT INTO `bunkodex_admin` (`uid`, `pass`) VALUES ('$user', '$pass');";
     if ($conn->query($query)){
         $_SESSION['user'] = html_string($user);

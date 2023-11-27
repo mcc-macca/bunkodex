@@ -2,8 +2,6 @@
 session_start();
 require '../lib/pdf_config.php';
 require '../lib/conf.php';
-$_SESSION['tmptmp'] = "macca";
-$_SESSION['password'] = "mcpassword";
 $pdf = new Fpdf();
 $def = new BunkoDEX_PDFConfig();
 
