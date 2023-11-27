@@ -13,7 +13,8 @@ define('QRYLOG', 'SELECT * FROM `bunkodex_log` ');
 /**
  * Function for read a JSON file
  */
-function read_json($file_path) {
+function read_json($file_path)
+{
     $json_string = file_get_contents($file_path);
     $data = json_decode($json_string, true);
     return $data;
@@ -22,7 +23,8 @@ function read_json($file_path) {
  * FUNZIONE PER VERIFICARE LA VERISIONE ATTUALE.
  * FUNCTION FOR CHECK CHE ACTUAL VERSION ON THE TS SITE
  */
-function check_version() {
+function check_version()
+{
     $data = read_json('../bunkodex.json');
     $ondataurl = $data['urlupdate'];
     $ondatadec = read_json($ondataurl);
@@ -36,7 +38,6 @@ function check_version() {
         $message = "";
     }
     return $message;
-
 }
 
 /**
@@ -54,23 +55,29 @@ function html_string($string)
 /**
  * GET THE REAL USER IP
  */
-function getIPAddress() {  
-	//whether ip is from the share internet  
-	if(!empty($_SERVER['HTTP_CLIENT_IP'])) {  
-		$ip = $_SERVER['HTTP_CLIENT_IP'];  
-	}  
-	//whether ip is from the proxy  
-	elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-		$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-	}
-	//whether ip is from the remote address
-	else{
-		$ip = $_SERVER['REMOTE_ADDR'];
-	}
-	return $ip;
+function getIPAddress() {
+    // prendi ip anche sotto rete cloudflare
+    if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+        $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+        $_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+    }
+    $client  = @$_SERVER['HTTP_CLIENT_IP'];
+    $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+    $remote  = $_SERVER['REMOTE_ADDR'];
+
+    if (filter_var($client, FILTER_VALIDATE_IP)) {
+        $ip = $client;
+    } elseif (filter_var($forward, FILTER_VALIDATE_IP)) {
+        $ip = $forward;
+    } else {
+        $ip = $remote;
+    }
+
+    return $ip;
 }
 
-function checkInternet(){
+function checkInternet()
+{
     $int = system("ping -w 10 -n 5 maccacomputer.com");
     return $int;
 }

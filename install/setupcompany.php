@@ -8,18 +8,12 @@ print_head("Setup Company name");
 
 if (isset($_POST['submit'])) {
     $companyname = html_string($_POST['cmp_name']);
-    $content .= "\ndefine('NAME_DEX', '$companyname');\ndefine('INST_DATE', '".date("d/m/Y")."')";
+    $content .= "\ndefine('NAME_DEX', '$companyname');\ndefine('INST_DATE', '".date("d/m/Y")."');";
     file_put_contents('../lib/conf.php', $content . PHP_EOL, FILE_APPEND);
-    if (isset($_POST['username'])) {
-        $user = html_string($_POST['username']);
-    } else {
-        $user = "admin";
-    }
-    if (isset($_POST['password'])) {
-        $pass = password_hash(html_string($_POST['password']), PASSWORD_DEFAULT);
-    } else {
-        $pass = password_hash("bunkodex", PASSWORD_DEFAULT);
-    }
+
+    $user = isset($_POST['username']) ? html_string($_POST['username']) : "admin";
+    $pass = isset($_POST['password']) ? password_hash(html_string($_POST['password']), PASSWORD_DEFAULT) : "bunkodex";
+
     $query = "INSERT INTO `bunkodex_admin` (`uid`, `pass`) VALUES ('$user', '$pass');";
     if ($conn->query($query)){
         $_SESSION['user'] = html_string($user);
