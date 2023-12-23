@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     $content .= "define('DB_NAME', '$dbname');\n";
     $content .= "define('DB_USER', '$dbuser');\n";
     $content .= "define('DB_PASS', '$dbpass');\n";
-    $content .= "\$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);\n";
+    $content .= PHP_EOL . "$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);\n";
     $content .= "if (mysqli_connect_errno()) {\n";
     $content .= " echo 'Error during database connection: ' . mysqli_connect_error();\n";
     $content .= "}";
